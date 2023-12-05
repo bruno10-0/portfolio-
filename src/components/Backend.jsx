@@ -6,7 +6,7 @@ const Backend = () => {
             <div className="relative flex flex-col justify-center items-center w-full h-full">
 
                 <div className="absolute top-0 left-0 m-4">
-                    <p className="text-white text-lg font-bold">Tecnologías</p>
+                    <p className="text-white text-lg font-bold select-none">Tecnologías</p>
                 </div>
 
                 {/* Grupo 1 */}
@@ -24,7 +24,7 @@ const Backend = () => {
                 </div>
 
                 <div className="absolute bottom-0 right-0 m-4">
-                    <p className="text-white text-lg font-bold">Backend</p>
+                    <p className="text-white text-lg font-bold select-none">Backend</p>
                 </div>
             </div>
         </>

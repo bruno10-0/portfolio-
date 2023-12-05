@@ -1,9 +1,18 @@
 import { GoDownload } from "react-icons/go";
 
 const Cv = () => {
+
+    const handleDownload = () => {
+        const pdfPath = "../downloads/BunoCV.pdf";
+        const link = document.createElement('a');
+        link.href = pdfPath;
+        link.target = '_blank';
+        link.download = 'Bruno_cv.pdf';
+        link.click();
+    };
     return (
         <>
-            <button className="relative btnCv w-full h-full ">
+            <button className="relative btnCv w-full h-full " onClick={handleDownload}>
                 <div className="absolute top-0 left-0 m-4">
                     <GoDownload className="text-white text-4xl" />
                 </div>

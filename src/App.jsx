@@ -12,14 +12,27 @@ import Project from "./components/Project";
 import Internships from "./components/Internships";
 import Cv from "./components/Cv";
 import Notice from "./components/Notice";
+import Alert from "./components/Alert";
 
 function App() {
+  const [isCopied, setIsCopied] = useState(false);
   const [theme, setTheme] = useState(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       return "dark";
     }
     return "light";
   });
+
+  const handleCopyClick = () => {
+    const emailText = 'brunobrodon75@gmail.com';
+
+    navigator.clipboard.writeText(emailText)
+      .then(() => {
+        setIsCopied(true);
+        setTimeout(() => setIsCopied(false), 3000);
+      })
+      .catch(err => console.error('Error al copiar al portapapeles', err));
+  }
 
   const handleToggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
@@ -34,7 +47,7 @@ function App() {
       <div className="h-auto lg:w-4/5 gallery p-4">
 
         {/* Columna 1 PERFIL*/}
-        <div className="row-span-2 md:col-span-2 md:row-span-2 lg:col-span-3 w-full h-auto bg-gradient-to-r from-purple-500 via-pink-500 to-red-600 rounded-xl">
+        <div className="row-span-2 md:col-span-2 md:row-span-2 lg:col-span-3 w-full h-auto bg-gradient-to-r from-purple-900 via-pink-500 to-red-900  rounded-xl">
           <Presentation />
         </div>
 
@@ -71,10 +84,9 @@ function App() {
         </div>
 
         {/* Columna 8 GMAIL*/}
-        <div className="col-span-1 w-full  bg-slate-200 dark:bg-slate-400  rounded-xl hover:scale-105 transition-transform duration-300 ease-in-out ">
-          <Gmail />
+        <div className="col-span-1 w-full  bg-slate-200 dark:bg-slate-400  rounded-xl hover:scale-105 transition-transform duration-300 ease-in-out">
+          <Gmail handleCopyClick={handleCopyClick}/>
         </div>
-
 
         {/* Columna 9 CERTIFICADOS*/}
         <div className="col-span-1 w-full  bg-slate-200 dark:bg-slate-400  rounded-xl hover:scale-105 transition-transform duration-300 ease-in-out ">
@@ -103,7 +115,9 @@ function App() {
         </div>
 
 
+
       </div>
+      {isCopied && <Alert text={"Gmail copiado al portapapeles"}></Alert>}
     </div>
   );
 }

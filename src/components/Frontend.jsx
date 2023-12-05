@@ -5,7 +5,7 @@ const Frontend = () => {
     return (
         <div className="flex flex-col justify-center items-center w-full h-full relative">
             <div className="absolute top-0 left-0 m-4">
-                <p className="text-white text-lg font-bold">Tecnologías</p>
+                <p className="text-white text-lg font-bold select-none">Tecnologías</p>
             </div>
 
             {/* Grupo 1 */}
@@ -23,7 +23,7 @@ const Frontend = () => {
             </div>
 
             <div className="absolute bottom-0 right-0 m-4">
-                <p className="text-white text-lg font-bold">Frontend</p>
+                <p className="text-white text-lg font-bold select-none">Frontend</p>
             </div>
         </div>
     );

@@ -1,11 +1,17 @@
 import { FaGithub } from 'react-icons/fa';
-
+import { LuArrowUpRight } from "react-icons/lu";
 const GitHub = () => {
+    const githubUrl = "https://github.com/bruno10-0?tab=repositories";
+
+    const handleClick = () => {
+        window.open(githubUrl, "_blank");
+    };
     return (
         <>
-            <div className="relative h-full w-full">
-                <div className="absolute top-0 left-0 m-4">
+            <div className="relative h-full w-full " onClick={handleClick} style={{ cursor: 'pointer' }}>
+                <div className="absolute top-0 left-0 m-4 flex w-full justify-between">
                     <FaGithub className="text-white text-4xl" />
+                    <LuArrowUpRight className="text-white text-4xl mr-6"/>
                 </div>
                 <div className="absolute bottom-0 left-0 m-4">
                     <p className="text-white text-2xl font-bold">GitHub</p>
