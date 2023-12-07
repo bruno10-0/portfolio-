@@ -15,10 +15,21 @@ import Notice from "./components/Notice";
 import Alert from "./components/Alert";
 import Modal from "./components/Modal"
 import Card from "./components/Card";
-import Card2  from "./components/Card2";
+import Card2 from "./components/Card2";
 function App() {
+
   const [modalGmail, setModalGmail] = useState(false)
+  const [modalInternships, setModalInternships] = useState(false)
   const [isCopied, setIsCopied] = useState(false);
+
+  const toggleModalGmail = () => {
+    setModalGmail(!modalGmail);
+  };
+
+  const toggleModalInternships = () => {
+    setModalInternships(!modalInternships);
+  };
+
   const [theme, setTheme] = useState(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       return "dark";
@@ -40,9 +51,7 @@ function App() {
   const handleToggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
-  const toggleModalGmail = () => {
-    setModalGmail(!modalGmail);
-  };
+
   useEffect(() => {
     document.querySelector("html").classList.toggle("dark", theme === "dark");
   }, [theme]);
@@ -99,7 +108,7 @@ function App() {
         </div>
 
         {/* Columna 10 PASANTIAS*/}
-        <div className="col-span-1  w-full  bg-slate-200 dark:bg-slate-400  rounded-xl hover:scale-105 transition-transform duration-300 ease-in-out ">
+        <div className="col-span-1  w-full  bg-slate-200 dark:bg-slate-400  rounded-xl hover:scale-105 transition-transform duration-300 ease-in-out " onClick={toggleModalInternships}>
           <Internships />
         </div>
 
@@ -116,14 +125,40 @@ function App() {
 
 
 
-        {/* Columna 9 CERTIFICADOS*/}
-        <div className="col-span-1 w-full  bg-slate-200 dark:bg-slate-400  rounded-xl hover:scale-105 transition-transform duration-300 ease-in-out " onClick={toggleModalGmail}>
+        {/* Columna 13 CERTIFICADOS*/}
+        <div className="cursor-pointer col-span-1 w-full  bg-slate-200 dark:bg-slate-400  rounded-xl hover:scale-105 transition-transform duration-300 ease-in-out " onClick={toggleModalGmail}>
           <Certificates />
         </div>
 
 
 
       </div>
+      <Modal openModal={modalInternships} closeModal={setModalInternships} titulo={"Pasantias"}>
+        <div className="flex items-center justify-center m-4 px-2">
+          <Card
+            title={"FANIOT"}
+            text={"La experiencia en FanIot no solo fue informativa y cómoda, sino también esencial para prepararnos para futuras incursiones profesionales. Nos ha proporcionado una visión valiosa del mundo empresarial y tecnológico, destacando la importancia de la innovación, la adaptabilidad y la colaboración en este entorno dinámico."}
+            imagen={"https://piip.misiones.gob.ar/wp-content/uploads/2022/04/Logos-para-web-PIIP_2.jpg"}
+            url={"https://faniot.com.ar/"} />
+
+        </div>
+
+        <div className="flex items-center justify-center m-4 px-2">
+          <Card
+            title={"VISES"}
+            text={"Durante mi pasantía en Vises, desarrollé Quejup, una aplicación web con Node, React, PostgreSQL y múchas otras librerias y frameworks. Integré funciones avanzadas como votación, geolocalización y consulta por entidades externas. Fue muy enriquedo aprender como tanto aplicar metodologías de trabajo y nuevas tecnologías."}
+            imagen={"https://res.cloudinary.com/dzemdgvqo/image/upload/v1701978947/mzs5fzjb7jvlg09lnef2.png"}
+            url={"https://www.vises.com.ar/index.html"} />
+        </div>
+
+        <div className="col-span-1 hidden items-center justify-center m-4 px-2 lg:flex">
+          <Card2
+            logo={true}
+            title={"Explorando Mis Inicios Profesionales"}
+            text={"Mis experiencias en mis dos primeras pasantías han sido fundamentales para mi desarrollo profesional. Estos primeros logros marcan el inicio de mi travesía en el mundo laboral, donde cada día estoy comprometido a aprender, crecer y perfeccionar mis habilidades. Estoy ansioso por seguir explorando nuevas oportunidades y desafíos, construyendo sobre las bases sólidas que he establecido hasta ahora."}
+          />
+        </div>
+      </Modal>
 
       <Modal openModal={modalGmail} closeModal={setModalGmail} titulo={"Certificados"}>
 
@@ -164,15 +199,18 @@ function App() {
         </div>
 
         <div className="col-span-2 hidden items-center justify-center m-4 px-2 lg:flex">
-          <Card2 />
+          <Card2
+            logo={false}
+            title={"Mis Logros y Próximos Pasos"}
+            text={"Estos logros son solo el comienzo de mi viaje de aprendizaje y crecimiento. Me estoy esforzando por absorber cada conocimiento, mejorar mis habilidades y explorar nuevas áreas."}
+          />
         </div>
 
 
 
       </Modal>
-      {isCopied && <Alert text={"Gmail copiado al portapapeles"}>
 
-      </Alert>}
+      {isCopied && <Alert text={"Gmail copiado al portapapeles"}></Alert>}
     </div>
   );
 }

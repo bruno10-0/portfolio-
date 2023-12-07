@@ -22,7 +22,7 @@ const Card = ({title,text,imagen,url}) => {
                     </p>
                 </div>
                 <div className="p-6 pt-0">
-                    <button data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 dark:bg-blue-800 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" onClick={redireccionar}>
+                    <button data-ripple-light="true" type="button" className="hover:scale-125 select-none rounded-lg bg-blue-500 dark:bg-blue-800 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" onClick={redireccionar}>
                         Ver
                     </button>
                 </div>
