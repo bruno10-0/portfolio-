@@ -11,8 +11,8 @@ const Internships = () => {
                     style={{ fill: '#0092E4' }}
                 />
                 <div className="absolute bottom-0 left-0 m-2 flex flex-col items-start">
-                    <p className="text-blue-500 text-2xl font-bold">Pasantias</p>
-                    <p className="text-blue-400 text-sm font-medium">Mis enriquecedoras pasantias</p>
+                    <p className="text-blue-500 text-2xl font-bold">Pasantías</p>
+                    <p className="text-blue-400 text-sm font-medium">Descubriendo el mundo laboral.</p>
                 </div>
             </button>
 

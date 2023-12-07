@@ -28,7 +28,7 @@ const Cv = () => {
                 />
                 <div className="absolute bottom-0 left-0 m-4 flex flex-col justify-start items-start">
                     <p className="text-white text-2xl font-bold">Currículum</p>
-                    <p className="text-white text-sm font-medium">Visualizar</p>
+                    <p className="text-white text-sm font-medium">Visualizar.</p>
                 </div>
             </button>
 

@@ -7,7 +7,7 @@ const Notice = () => {
                 <div className="back">
                     <div className="back-content">
                         <GiMicrophone className="text-6xl text-orange-400" />
-                        <strong>NOTICIA</strong>
+                        <strong>NOTICIAS</strong>
                     </div>
                 </div>
                 <div className="front">
