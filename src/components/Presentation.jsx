@@ -16,7 +16,7 @@ const Presentation = () => {
                 <div className="absolute top-0 left-1/2  -translate-x-1/2 -mt-3 lg:hidden">
                     <div className="w-24 h-24 bg-gradient-to-r from-purple-500  to-pink-700 border-4 border-blue-600 dark:border-black rounded-full overflow-hidden">
                         <img
-                            src="https://res.cloudinary.com/dzemdgvqo/image/upload/v1701451938/d4akhatt8e4pdlun9sq2.png"
+                            src="https://res.cloudinary.com/dzemdgvqo/image/upload/v1702181308/imgPortfolio/xnzsjkx4qpooaub3dpbn.png"
                             alt="Icono"
                             className="w-full h-full object-cover"
                         />

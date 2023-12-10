@@ -4,7 +4,7 @@ const Internships = () => {
             <div className="btn w-full h-full relative">
               
                 <img
-                    src="https://res.cloudinary.com/dzemdgvqo/image/upload/v1701556366/elizyclegmbc6t4pxivk.png"
+                    src="https://res.cloudinary.com/dzemdgvqo/image/upload/v1702181822/imgPortfolio/tbnfbz0w4ecngeqfwjr1.png"
                     alt="Imagen de Pasantia"
                     width="90"
                     height="90"

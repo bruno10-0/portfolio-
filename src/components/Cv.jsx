@@ -20,7 +20,7 @@ const Cv = () => {
                     <LuArrowUpRight className="text-white text-4xl" />
                 </div>
                 <img
-                    src="https://res.cloudinary.com/dzemdgvqo/image/upload/v1701559261/yw1swaeh0groeaizr7lk.png"
+                    src="https://res.cloudinary.com/dzemdgvqo/image/upload/v1702181765/imgPortfolio/pitwub0nk9zimiofuwrj.png"
                     alt="Imagen de CV"
                     width="90"
                     height="90"

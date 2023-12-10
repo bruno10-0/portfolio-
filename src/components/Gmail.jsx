@@ -7,7 +7,7 @@ const Gmail = ({handleCopyClick}) => {
         <>
             <button className="relative btn w-full h-full" onClick={handleCopyClick}>
                 <img
-                    src="https://res.cloudinary.com/dzemdgvqo/image/upload/v1701499765/gqy0oyactyw6ovktvd45.png"
+                    src="https://res.cloudinary.com/dzemdgvqo/image/upload/v1702181474/imgPortfolio/ageyfidgskdqgjp3xrph.png"
                     alt="Imagen de Gmail"
                     width="90"
                     height="90"

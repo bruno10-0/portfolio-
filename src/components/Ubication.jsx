@@ -5,7 +5,7 @@ const Ubication = () => {
     return (
         <div className="relative w-full h-full rounded-xl">
             <img
-                src="https://res.cloudinary.com/dzemdgvqo/image/upload/v1701482386/sw2ukbyvoho0xfmna9z0.png"  // Reemplaza con la ruta correcta de tu imagen
+                src="https://res.cloudinary.com/dzemdgvqo/image/upload/v1702181412/imgPortfolio/qaaznmv5xmjuhg06hled.png"
                 alt="Background Image"
                 className="w-full h-full object-cover rounded-xl"
             />
@@ -13,14 +13,14 @@ const Ubication = () => {
                 className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center rounded-xl"
                 style={{
                     backgroundColor: 'rgba(255, 255, 255, 0.5)',
-                    backdropFilter: 'blur(0px)',  // Ajusta la cantidad de desenfoque aquí
+                    backdropFilter: 'blur(0px)',
                 }}
             >
                 <div className="relative w-24 h-24 mb-4">
                     <div className="absolute inset-0 flex items-center justify-center">
                         <div className="z-10 w-24 h-24 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-600 border-4 border-orange-200 rounded-full overflow-hidden">
                             <img
-                                src="https://res.cloudinary.com/dzemdgvqo/image/upload/v1701451938/d4akhatt8e4pdlun9sq2.png"
+                                src="https://res.cloudinary.com/dzemdgvqo/image/upload/v1702181308/imgPortfolio/xnzsjkx4qpooaub3dpbn.png"
                                 alt="Profile"
                                 className="w-full h-full object-cover rounded-full"
                             />

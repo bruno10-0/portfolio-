@@ -3,14 +3,10 @@
 @tailwind utilities;
 
 .theme-switch {
-    --toggle-size: 30px;
-    /* the size is adjusted using font-size,
-       this is not transform scale,
-       so you can choose any size */
+    --toggle-size: 10px;
     --container-width: 5.625em;
     --container-height: 2.5em;
     --container-radius: 6.25em;
-    /* radius 0 - minecraft mode :) */
     --container-light-bg: #3D7EAE;
     --container-night-bg: #1D1F2C;
     --circle-container-diameter: 3.375em;
@@ -274,13 +270,13 @@
   }
   
   .bg-light {
-    background-image: url("https://res.cloudinary.com/dzemdgvqo/image/upload/v1701550376/chm7gzjsybnsvdxormxh.png");
+    background-image: url("https://res.cloudinary.com/dzemdgvqo/image/upload/v1702181602/imgPortfolio/wrz1rg8ac5n8jvj7y5rg.png");
     background-size: cover;
     background-position: center;
   }
 
   .bg-dark {
-    background-image: url("https://res.cloudinary.com/dzemdgvqo/image/upload/v1701735929/mjcdlkisecbgg8hjosds.jpg");
+    background-image: url("https://res.cloudinary.com/dzemdgvqo/image/upload/v1702181692/imgPortfolio/zcge8oxm8gfyrrwjkkxk.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -455,4 +451,42 @@
     100% {
       transform: translateY(0px);
     }
+  }
+
+  .carousel {
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    min-height: auto;
+  }
+
+  .carousel {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #F3FDFF;
+  }
+  
+  .carousel-button-left {
+    left: 0;
+  }
+  
+  .carousel-button-right {
+    right: 0;
   }

@@ -1,5 +1,6 @@
 // eslint-disable-next-line react/prop-types
 const ThemeSwitch = ({ theme, onToggle }) => {
+
     return (
         <label className="theme-switch">
             <input
