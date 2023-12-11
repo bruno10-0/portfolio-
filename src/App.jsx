@@ -152,7 +152,7 @@ function App() {
           <Card2
             logo={true}
             title={"Explorando Mis Inicios Profesionales"}
-            text={"Mis experiencias en mis dos primeras pasantías han sido fundamentales para mi desarrollo profesional. Estos primeros logros marcan el inicio de mi travesía en el mundo laboral, donde cada día estoy comprometido a aprender, crecer y perfeccionar mis habilidades. Estoy ansioso por seguir explorando nuevas oportunidades y desafíos, construyendo sobre las bases sólidas que he establecido hasta ahora."}
+            text={"Mis experiencias en mis dos primeras pasantías han sido fundamentales para mi desarrollo profesional."}
           />
         </div>
       </Modal>
