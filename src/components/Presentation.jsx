@@ -33,7 +33,7 @@ const Presentation = () => {
 
                 <div className="hidden md:hidden lg:block w-1/2 h-full p-2">
                     <img
-                        src={"https://res.cloudinary.com/dzemdgvqo/image/upload/v1701451938/d4akhatt8e4pdlun9sq2.png"}
+                        src="https://res.cloudinary.com/dzemdgvqo/image/upload/v1702181308/imgPortfolio/xnzsjkx4qpooaub3dpbn.png"
                         alt="Imagen animada Bruno"
                         className="h-full w-full object-cover rounded-lg select-none"
                     />
