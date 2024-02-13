@@ -4,6 +4,7 @@ import ThemeSwitch from "./components/ThemeSwitch";
 import { useTheme } from "./context/themeContext";
 import CardProject from "./components/CardProject";
 import { SiNodedotjs, SiPostgresql, SiTailwindcss, SiReact, SiExpress } from "react-icons/si";
+import { SiDaisyui } from "react-icons/si";
 const Projects = () => {
     const { theme, toggleTheme } = useTheme();
 
@@ -13,7 +14,6 @@ const Projects = () => {
         { imageUrl: 'https://res.cloudinary.com/dzemdgvqo/image/upload/v1702184630/imgPortfolio/projects/piaxarpvapq9psggqp6t.png', altText: 'Incio de sesión' },
         { imageUrl: 'https://res.cloudinary.com/dzemdgvqo/image/upload/v1702183996/imgPortfolio/projects/qvtckcco8puxh9r0e41h.png', altText: 'Principal' },
         { imageUrl: 'https://res.cloudinary.com/dzemdgvqo/image/upload/v1702184630/imgPortfolio/projects/ymad9gbtmibewb4cmgvp.png', altText: 'Publicación' },
-        { imageUrl: 'https://res.cloudinary.com/dzemdgvqo/image/upload/v1702183999/imgPortfolio/projects/gz1hi3bxccir13ouam66.png', altText: 'Ubicación' },
 
     ];
 
@@ -23,6 +23,11 @@ const Projects = () => {
         { imageUrl: 'https://res.cloudinary.com/dzemdgvqo/image/upload/v1702185983/imgPortfolio/projects/lqud4kwpttmvwjef823s.png', altText: 'inicio' },
         { imageUrl: 'https://res.cloudinary.com/dzemdgvqo/image/upload/v1702185982/imgPortfolio/projects/frsml03mlx8ri0lfvtcv.png', altText: 'eliminar' },
         { imageUrl: 'https://res.cloudinary.com/dzemdgvqo/image/upload/v1702185982/imgPortfolio/projects/ak8d45dlwal5dqtvrtbz.png', altText: 'eliminar' },
+    ];
+    const carouselItemsReactMarket = [
+        { imageUrl: 'https://res.cloudinary.com/dzemdgvqo/image/upload/v1707843238/imgPortfolio/projects/ajcgqw8nzubpfahtfqh7.png', altText: 'detalles' },
+        { imageUrl: 'https://res.cloudinary.com/dzemdgvqo/image/upload/v1707843279/imgPortfolio/projects/pcssuwnitzivboz5dyhr.png', altText: 'detalles' },
+        { imageUrl: 'https://res.cloudinary.com/dzemdgvqo/image/upload/v1707843105/imgPortfolio/projects/cog7sicjvk36tdjp76oo.png', altText: 'detalles' },
     ];
 
     useEffect(() => {
@@ -36,7 +41,7 @@ const Projects = () => {
             <div className="w-full h-16 bg-transparent mb">
             </div>
 
-            <div className="p-5 w-full grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div className="p-5 w-full grid grid-cols-1 md:grid-cols-2 gap-5 ">
                 <CardProject
                     carouselItems={carouselItemsQuejup}
                     name={"Quejup"}
@@ -64,13 +69,33 @@ const Projects = () => {
                     role={"Me responsabilicé de la creación y desarrollo de la funcionalidad principal de las tarjetas (cards) en la interfaz, permitiendo a los usuarios crear y eliminar notas de manera intuitiva."}
                     objective={"Este proyecto tiene como finalidad demostrar las habilidades fundamentales en React. Además, busca evidenciar la destreza para seguir un diseño propuesto de manera efectiva."}
                     urlGitHub={"https://github.com/NAB-TAG/TaskList_argentinaPrograma"}
-                    urlPageWeb={"http://taskapp.lovestoblog.com/"}
+                    urlPageWeb={"https://nab-tag.vercel.app/"}
                 >
                     <div className="flex justify-start gap-5 p-1 my-2">
                         <SiReact className="animate-spin text-blue-400   text-4xl hover:scale-125 transition-transform duration-300 ease-in-out" />
                         <SiTailwindcss className="text-sky-600 text-4xl hover:scale-125 transition-transform duration-300 ease-in-out" />
                     </div>
                 </CardProject >
+
+                <div className="border-green-300">
+                    <CardProject
+                        carouselItems={carouselItemsReactMarket}
+                        name={"ReactMarket"}
+                        dateCompletion={"EN DESARROLLO"}
+                        description={"ReactMarket surge como un proyecto personal, por el deseo de mejorar las buenas prácticas en el desarrollo. Es una pagina web ecommerce"}
+                        role={"Dado que este proyecto es personal, estoy asumiendo todas las responsabilidades y fases del desarrollo por mi cuenta. Desde la concepción hasta la implementación, estoy dedicado a cada aspecto del proceso, lo que me permite crecer y aprender en cada etapa del camino."}
+                        objective={"En mi búsqueda constante por aprender y mejorar, decidí implementar DaisyUI en el diseño del frontend, una decisión que resultó ser muy acertada. Esta herramienta se ha vuelto indispensable, ya que agiliza enormemente el desarrollo de componentes y otras funcionalidades."}
+                        urlGitHub={"https://github.com/bruno10-0/ReactMarket"}
+                        urlPageWeb={"https://react-market-gamma.vercel.app/"}
+                    >
+                        <div className="flex justify-start gap-5 p-1 my-2">
+                            <SiDaisyui className="text-yellow-300   text-4xl hover:scale-125 transition-transform duration-300 ease-in-out" />
+                            <SiReact className="animate-spin text-blue-400   text-4xl hover:scale-125 transition-transform duration-300 ease-in-out" />
+                            <SiTailwindcss className="text-sky-600 text-4xl hover:scale-125 transition-transform duration-300 ease-in-out" />
+                        </div>
+                    </CardProject >
+                </div>
+
             </div>
         </div>
     )

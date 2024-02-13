@@ -29,7 +29,7 @@ const CardProject = ({ children, name, description, objective, role, dateComplet
                 <div className="z-10 flex flex-col justify-evenly w-full h-full">
                     <span className="flex items-center justify-between text-center">
                         <span className="text-3xl font-bold mr-2">{name}</span>
-                        <div className="bg-gray-500 text-white rounded-full p-2 text-sm mt-2">Finalizó {dateCompletion}</div>
+                        <div className="bg-green-500 text-white rounded-full p-2 text-sm mt-2">{dateCompletion}</div>
                     </span>
 
                     <span className="text-2xl my-2">Descripción</span>

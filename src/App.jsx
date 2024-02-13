@@ -135,8 +135,10 @@ function App() {
           <Card
             title={"FANIOT"}
             text={"La experiencia en FanIot no solo fue informativa y cómoda, sino también esencial para prepararnos para futuras incursiones profesionales. Nos ha proporcionado una visión valiosa del mundo empresarial y tecnológico, destacando la importancia de la innovación, la adaptabilidad y la colaboración en este entorno dinámico."}
-            imagen={"https://piip.misiones.gob.ar/wp-content/uploads/2022/04/Logos-para-web-PIIP_2.jpg"}
-            url={"https://faniot.com.ar/"} />
+            imagen={"https://faniot.com.ar/assets/images/logo-transparente-536x169.png"}
+            url={"https://faniot.com.ar/"}
+            
+            />
 
         </div>
 

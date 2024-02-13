@@ -5,7 +5,7 @@ const Cv = () => {
 
     function redirigirACanva() {
         // URL de Canva
-        const urlCanva ="https://www.canva.com/design/DAFrgkFzlkw/THSYnwh9gB0388FF4FU1rA/view?utm_content=DAFrgkFzlkw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+        const urlCanva ="https://www.canva.com/design/DAF737TBX8g/CJT_M71R0hrqWPP2Wi5Hng/view?utm_content=DAF737TBX8g&utm_campaign=designshare&utm_medium=link&utm_source=editor"
         // Abrir la URL en una nueva pestaña
         window.open(urlCanva, "_blank");
     }

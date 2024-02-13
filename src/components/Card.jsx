@@ -10,7 +10,7 @@ const Card = ({title,text,imagen,url}) => {
                 <img
                 src={imagen} 
                 alt="Background Image"
-                className="w-full h-full object-cover rounded-xl"
+                className="w-full h-full object-fill rounded-xl bg-white"
             />
                 </div>
                 <div className="p-6">
